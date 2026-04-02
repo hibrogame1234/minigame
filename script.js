@@ -12,7 +12,7 @@ window.dbOnValue(window.dbRef(window.db, 'leaderboard'), (snapshot) => {
         // Chuyển object thành mảng và sắp xếp điểm cao xuống thấp
         const list = Object.values(data).sort((a, b) => b.score - a.score);
         
-        list.slice(0, 10).forEach((item, index) => { // Chỉ lấy Top 10
+        list.slice(0, 30).forEach((item, index) => { // Chỉ lấy Top 10
             scoreBody.innerHTML += `
                 <tr>
                     <td>${index + 1}</td>
