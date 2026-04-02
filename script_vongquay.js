@@ -60,7 +60,7 @@ function initGame() {
         if (!historyBody) return;
         historyBody.innerHTML = "";
         if (data) {
-            const list = Object.values(data).reverse().slice(0, 10);
+            const list = Object.values(data).reverse().slice(0, 30);
             historyBody.innerHTML = list.map(i => `
                 <tr>
                     <td style="color: #888; font-size: 0.8rem;">${i.time}</td>
